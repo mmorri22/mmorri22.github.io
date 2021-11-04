@@ -1,0 +1,116 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Matthew Morrison</title>
+        <link type="text/vcard" href="contactinfo.vcf">
+        <link type="text/x-vcard" href="contactios.vcf">
+        <link rel="icon" type="image/png" href="https://vaibhavarora.net/img/favicon.ico"/>
+        <link rel="manifest" href="assets/site.webmanifest" crossorigin="use-credentials">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- The Modal -->
+        <div1 id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+                <span class="close">&times;</span>
+                <a href="contactinfo.vcf" class="links"> Android </a>
+                <a href="contactios.vcf" class="links"> iPhone </a>
+            </div>
+        </div1>
+
+        <center>
+        <div style="background-color: white ;width: fit-content;height: fit-content;border-radius: 20px;margin-left: 5%;margin-top: 5%;">
+        <!-- Profile picture-->
+            <br>
+            <img src="Headshot.jpg" alt="profile picture" class="profile-picture">
+            <!-- Profile name-->
+        <h1 class="profile name"><a target="_blank" class="profile name">Matthew Morrison</a></h1>
+        <!-- Profile motto-->
+        <h2 class="profile motto">
+          Assistant Teaching Professor,<br>
+          Computer Science and Engineering,<br>
+          University of Notre Dame
+        </h2>
+        <!-- Social Media Icons-->
+		<p style="margin: 0.75pt; font-size: 20px; font-family: Arial, sans-serif;">
+			      <a href=" https://www.linkedin.com/in/gregariousmatt/" target="_blank">
+                <img width="40" height="40" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-512.png" alt="" style="border: 0 ;  border-radius: 0px;">                      
+            </a> 
+            <a href="https://github.com/mmorri22" target="_blank">
+                <img width="40" height="40" src="https://image.flaticon.com/icons/png/512/37/37318.png" alt=" " style="border: 0 ; border-radius: 0px ; ">
+            </a>
+            <a href="http://sites.nd.edu/mmorrison/2018/12/28/morrison/" target="_blank">
+                <img width="40" height="40" src="https://th.bing.com/th/id/OIP.vRE0tGGZdKN4XXpyxL159QHaHa?pid=ImgDet&rs=1" alt=" " style="border: 0 ; border-radius: 0px ; ">
+            </a>
+            <a href="https://twitter.com/NDCSE_VLSI" target="_blank">
+              <img width="40" height="40" src="https://www.freeiconspng.com/uploads/logo-twitter-circle-png-transparent-image-1.png" alt=" " style="border: 0 ; border-radius: 0px ; ">
+          </a>
+		</p>
+        <!-- Links and Headers-->
+        <a class="links" id="myBtn" onclick="myFunction()"> Save Contact </a>
+        <a href="https://engineering.nd.edu/faculty/matthew-morrison/" target="_blank" class="links">Course Website</a>
+        <a href="https://calendar.google.com/calendar/u/0?cid=bW1vcnJpMjJAbmQuZWR1" target="_blank" class="links">Calender</a>
+        <a href="mailto:matt.morrison@nd.edu" target="_blank" class="links">Gmail</a>
+            <br>
+        </div>
+        </center>
+    </body>
+
+</html>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAh0E9J1FeOadVfiig_PipnbhsRk7HbdDc",
+    authDomain: "boreal-sweep-322808.firebaseapp.com",
+    databaseURL: "https://boreal-sweep-322808-default-rtdb.firebaseio.com",
+    projectId: "boreal-sweep-322808",
+    storageBucket: "boreal-sweep-322808.appspot.com",
+    messagingSenderId: "932525026142",
+    appId: "1:932525026142:web:5bacfcdd579407ddedbdcf",
+    measurementId: "G-0656CN3PT8"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
